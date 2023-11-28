@@ -15,8 +15,8 @@ body {
   
   .equipo1 {
     position: absolute;
-    top: 450px;
-    left: 90px;
+    top: 40%;
+    left: 0;
     display: flex;
     flex-direction: column;
     color: #000;
@@ -28,8 +28,8 @@ body {
   }
   .equipo2 {
     position: absolute;
-    top: 450px;
-    right: 90px;
+    top: 40%;
+    right: 0;
     display: flex;
     flex-direction: column;
     color: #000;

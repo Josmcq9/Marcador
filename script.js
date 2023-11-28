@@ -47,3 +47,45 @@ function toggleFullScreen() {
         }
       }
     }
+
+// Tu código JavaScript existente
+
+function resetPuntuacion() {
+  document.getElementById("puntuacion1").textContent = "0";
+  document.getElementById("puntuacion2").textContent = "0";
+}
+
+function alternarFullscreen() {
+  const isInFullscreen = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+
+  if (isInFullscreen) {
+      salirFullscreen();
+  } else {
+      activarFullscreen();
+  }
+}
+
+function activarFullscreen() {
+  const element = document.documentElement;
+  if (element.requestFullscreen) {
+      element.requestFullscreen();
+  } else if (element.mozRequestFullScreen) { /* Firefox */
+      element.mozRequestFullScreen();
+  } else if (element.webkitRequestFullscreen) { /* Chrome, Safari y Opera */
+      element.webkitRequestFullscreen();
+  } else if (element.msRequestFullscreen) { /* IE/Edge */
+      element.msRequestFullscreen();
+  }
+}
+
+function salirFullscreen() {
+  if (document.exitFullscreen) {
+      document.exitFullscreen();
+  } else if (document.mozCancelFullScreen) { /* Firefox */
+      document.mozCancelFullScreen();
+  } else if (document.webkitExitFullscreen) { /* Chrome, Safari y Opera */
+      document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE/Edge */
+      document.msExitFullscreen();
+  }
+}

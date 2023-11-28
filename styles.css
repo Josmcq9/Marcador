@@ -55,18 +55,36 @@ body {
   justify-content: center;
 }
 
+.botones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+img {
+  width: 50px;
+}
+
 button {
-  margin-top: 10px;
+  margin: 0 10px;
   cursor: pointer;
   padding: 10px;
   font-size: 16px;
-  background-color: #3498db;
-  color: #fff;
   border: none;
   border-radius: 5px;
-  transition: background-color 0.3s ease-in-out;
 }
 
-button:hover {
-  background-color: #2980b9;
+/* Estilos adicionales para tabletas */
+@media (max-width: 768px) {
+  #marcador {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .carta {
+    width: 100%; /* Ocupa todo el ancho en tabletas */
+    margin-bottom: 20px;
+  }
 }

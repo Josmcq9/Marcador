@@ -3,7 +3,7 @@ body {
     background-image: url(PACHANGA-PRO-WEB.jpg);
     background-size: cover;
     background-repeat: none;
-    display: flex;
+      display: flex;
       align-items: center;
       justify-content: center;
       height: 100vh;
@@ -11,8 +11,9 @@ body {
   }
   
   #marcador {
-    margin-top: 150px;
+    margin-top: 200px;
     display: grid;
+    gap: 8rem;
     grid-template-columns: repeat(2,1fr);
     justify-items: stretch;
     align-items:end ;
@@ -23,26 +24,24 @@ body {
   }
   
   .equipo {
-    padding: 30px;
+    border: 1px solid red;
+    padding: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    height: 300px;
+    align-items: end;
+    height: auto;
+    max-width: 500px;
     text-align: center;
     color: #fff;
+    font-size: 60px;
+
 
   }
-  .equipo1{
-    font-size: 54px;
-  }
-  .equipo2{
 
-    font-size: 54px;
-  }
   .puntuacion {
     display: flex;
     align-items: center;
-    font-size: 80px;
+    font-size: 90px;
     font-weight: bold;
     margin: 0 auto;
   }

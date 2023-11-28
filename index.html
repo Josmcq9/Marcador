@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <title>Marcador de Partido</title>
+  <style>
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(PACHANGA-PRO-WEB.jpg);
+    background-size: cover;
+    background-repeat: none;
+    display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+  }
+  
+  #marcador {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: stretch;
+    align-items:end ;
+    justify-items: center;
+    width: 100%;
+    height: 500px;
+ 
+  }
+  
+  .equipo {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 300px;
+    text-align: center;
+    color: #fff;
+
+  }
+  .equipo1{
+    font-size: 54px;
+  }
+  .equipo2{
+
+    font-size: 54px;
+  }
+  .puntuacion {
+    display: flex;
+    align-items: center;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0 auto;
+  }
+  
+  button {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  </style>
+</head>
+<body>
+  <div id="marcador">
+    <div onclick="anotarGol(1)" class="equipo equipo1">
+      <p id="tituloEquipo">Equipo Rojo</p>
+      <div class="puntuacion">
+        <p id="puntuacion1">0</p>
+      </div>
+    </div>
+    
+    <div onclick="anotarGol(2)" class="equipo equipo2">
+      <span id="tituloEquipo">Equipo Azul</span>
+      <div class="puntuacion">
+        <p id="puntuacion2">0</p>
+      </div>
+    </div>
+  </div>
+
+  <script >
+    let puntuacion1 = 0;
+let puntuacion2 = 0;
+
+function anotarGol(equipo) {
+  if (equipo === 1) {
+    puntuacion1++;
+  } else if (equipo === 2) {
+    puntuacion2++;
+  }
+
+  actualizarMarcador();
+}
+
+function actualizarMarcador() {
+  document.getElementById("puntuacion1").textContent = puntuacion1;
+  document.getElementById("puntuacion2").textContent = puntuacion2;
+}
+
+  </script>
+</body>
+</html>

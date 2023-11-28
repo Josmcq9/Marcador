@@ -51,8 +51,10 @@ function toggleFullScreen() {
 // Tu código JavaScript existente
 
 function resetPuntuacion() {
-  document.getElementById("puntuacion1").textContent = "0";
-  document.getElementById("puntuacion2").textContent = "0";
+  puntuacion1 = 0;
+  puntuacion2 = 0;
+  actualizarMarcador();
+
 }
 
 function alternarFullscreen() {

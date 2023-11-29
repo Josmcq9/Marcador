@@ -104,5 +104,8 @@ button {
     width: 100%; /* Ocupa todo el ancho en tabletas */
     margin-bottom: 20px;
   }
+  .puntuacion {
+    font-size: 70px;
+  }
 }
 

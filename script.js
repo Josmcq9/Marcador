@@ -1,11 +1,33 @@
 let puntuacion1 = 0;
 let puntuacion2 = 0;
 
-function anotarGol(equipo) {
+function anotarGol(equipo, e) {
+  e.stopPropagation();
   if (equipo === 1) {
     puntuacion1++;
   } else if (equipo === 2) {
     puntuacion2++;
+  }
+
+ 
+
+  actualizarMarcador();
+}
+
+function restarGol(equipo, e) {
+  e.stopPropagation();
+  if (equipo === 1) {
+    if (puntuacion1 === 0) {
+      puntuacion1 = 0;
+    } else {
+      puntuacion1 = puntuacion1 - 1;
+    }
+  } else if (equipo === 2) {
+    if (puntuacion2 === 0) {
+      puntuacion2 = 0;
+    } else {
+      puntuacion2 = puntuacion2 - 1;
+    }
   }
 
   actualizarMarcador();

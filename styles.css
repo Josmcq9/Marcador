@@ -50,7 +50,7 @@ body {
 
 .puntuacion {
   display: flex;
-  font-size: 150px;
+  font-size: 60px;
   font-weight: bold;
   margin-top: 0;
 }

@@ -22,7 +22,7 @@ body {
 .carta {
   background-color: rgba(255, 255, 255, 0.8); /* Ajusta el último valor según tu preferencia de opacidad */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px;
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
   width: 45%; /* Ajusta el ancho de las cartas según tu diseño */
@@ -34,23 +34,25 @@ body {
 }
 
 .equipo {
+  width: 400px;
+  max-height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #000;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bold;
   text-align: center;
 }
 
 .logo-equipo {
-  width: 100px; /* Ajusta el tamaño del logo según tu diseño */
+  width: 80px; /* Ajusta el tamaño del logo según tu diseño */
   margin-top: 10px;
 }
 
 .puntuacion {
   display: flex;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: bold;
   margin-top: 0;
 }
@@ -103,9 +105,6 @@ button {
   .carta {
     width: 100%; /* Ocupa todo el ancho en tabletas */
     margin-bottom: 20px;
-  }
-  .puntuacion {
-    font-size: 70px;
   }
 }
 

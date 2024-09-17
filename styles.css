@@ -20,7 +20,7 @@ body {
 }
 
 .carta {
-  background-color: rgba(252, 11, 208, 0.8); /* Ajusta el último valor según tu preferencia de opacidad */
+  background-color: rgba(254, 200, 216, 0.8); /* Ajusta el último valor según tu preferencia de opacidad */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 10px;

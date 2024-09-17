@@ -29,7 +29,7 @@ body {
   box-sizing: border-box;
 }
 .carta2{
-  background-color: rgba(254, 200, 216, 0.9); /* Ajusta el último valor según tu preferencia de opacidad */
+  background-color: rgba(140, 225, 244, 0.9); /* Ajusta el último valor según tu preferencia de opacidad */
 }
 
 .carta:hover {

@@ -28,6 +28,9 @@ body {
   width: 45%; /* Ajusta el ancho de las cartas según tu diseño */
   box-sizing: border-box;
 }
+.carta2{
+  background-color: rgba(254, 200, 216, 0.9); /* Ajusta el último valor según tu preferencia de opacidad */
+}
 
 .carta:hover {
   transform: scale(1.05);
